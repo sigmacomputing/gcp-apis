@@ -7,6 +7,8 @@ extern crate serde_json;
 extern crate url;
 extern crate yup_oauth2;
 
-pub mod common;
+mod common;
 pub mod cloudkms1;
 pub mod datastore1;
+
+pub use common::{Error, Result};
