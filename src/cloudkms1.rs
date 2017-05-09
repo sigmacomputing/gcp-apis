@@ -205,7 +205,7 @@ use common::{MultiPartReader, ToParts, MethodInfo, Result, Error, CallBuilder, H
              MethodsBuilder, Resource, ErrorResponse, remove_json_null_values};
 
 use hyper;
-use mime;
+use hyper::mime;
 use url;
 use yup_oauth2 as oauth2;
 

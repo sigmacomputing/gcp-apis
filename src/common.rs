@@ -10,13 +10,13 @@ use std::error;
 use std::thread::sleep;
 use std::time::Duration;
 
-use mime::{Mime, TopLevel, SubLevel, Attr, Value};
 use yup_oauth2::{self as oauth2, TokenType, Retry};
 use hyper;
 use hyper::header::{ContentType, ContentLength, Headers, UserAgent, Authorization, Header,
                     HeaderFormat, Bearer};
 use hyper::http::h1::LINE_ENDING;
 use hyper::method::Method;
+use hyper::mime::{Mime, TopLevel, SubLevel, Attr, Value};
 use hyper::status::StatusCode;
 
 use serde_json as json;
